@@ -5,13 +5,13 @@
 
 makeCacheMatrix <- function(x = matrix()) {
   #default value of cache
-  ma <- NULL
+  mat <- NULL
   
   # Set the value of the matrix.
   setMatrix <- function(matrix_value) {
     x <<- matrix_value
     # since the matrix is assigned a new value, flush the cache
-    ma <<- NULL
+    mat <<- NULL
   }
   
   # Get the value of the matrix.
@@ -21,12 +21,12 @@ makeCacheMatrix <- function(x = matrix()) {
   
   # Set the inverse function value of the matrix.
   setInverse <- function(solve) {
-    ma <<- solve
+    mat <<- solve
   }
   
   # Get the inverse function value of the matrix.
   getInverse <- function() {
-    ma
+    mat
   }
   
   # Return the matrix values stored in a list.
