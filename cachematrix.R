@@ -3,6 +3,7 @@
 
 ## Write a short comment describing this function
 
+## Cache Matrix function.
 makeCacheMatrix <- function(x = matrix()) {
   #default value of cache
   mat <- NULL
